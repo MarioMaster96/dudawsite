@@ -1,0 +1,651 @@
+Super Mario 64 Behavior Script Functions (...Total number of functions goes here...)
+http://dudaw.webs.com/
+
+NOTE: Any number prefixed with "0x" is in HEXADECIMAL format.
+Incomplete, there may be some duplicates. Revision is needed.
+
+Last updated 2/26/2011.
+______________________________________________________________
+
+Loop
+(between 0x08000000 and script end)
+--------------
+0x803839CC : ***Process collision 
+             Always put after loop functions for objects with collision pointers! (0x2A)
+
+0x802A56BC : Sliding star door movement (0x13000000) [Has init.]
+0x802ACE80 : Not sure (0x13000000) [Has init.]
+0x802A6B7C : Mr. I (action and collision settings, objects are grouped elsewhere) (0x13000054) [Has init.]
+0x802A5BD4 : Mr. I pupil (y-rotation around center) (0x1300008C) [Has init.]
+0x802A5AA0 : 
+0x802A6C74 : 
+0x802C63E8 : 
+0x802A6CF4 : 
+0x802A6D64 : 
+0x802A7170 : Cap switch (scaling and main switch press stuff) (0x130001CC) [No init.]
+0x802A8064 : 
+0x802A7230 : 
+0x802A81E8 : 
+0x802A821C : 
+0x802A83A0 : 
+0x802A8CDC : 
+0x802A9498 : 
+0x802A94F8 : 
+0x802AA0AC : 
+0x802A9708 : 
+0x802AA830 : Y-Rotation with speed parameter (0x130005B4) [No init.]
+             Behavior parameter 1: rotation speed.
+             Behavior parameter 2: collision pointer.
+             May need some hacking to get rid of the hardcoded pointer table.
+0x802AA1B8 : Explodes when shot with cannon (needs collision sphere for size range) (0x13000624/0x13000638) [No init.]
+0x802AA3F4 : 
+0x802AA700 : Explodes when punched - hiden tower wall (needs collision sphere for size range) (0x130006A4) [No init.]
+0x802AA774 : Counter-clockwise y-rotation (wooden bridge in WF) (0x130006E0) [No init.]
+0x802AA97C : 
+0x802AAB54 : 
+0x802AAA60 : Unsure (warp pipe) (0x130007A0) [No init.]
+0x802AAC48 : 
+0x802AB1C8 : 
+0x802AB860 : 
+0x802AC294 : 
+0x802ABA40 : 
+0x802ABF0C : 
+0x802AB70C : 
+0x802AB748 : 
+0x802AB860 : 
+0x802AC3A8 : 
+0x802ACAC8 : 
+0x802AD34C : Thwomp and Grindel y-movement (0x13000B58) [No init.]
+0x802AD378 : Tumbles when stepped on (0x13000C04) [No init.]
+0x802AD890 :
+0x802ADF6C : Elevator platform 1 (used by objects in HMC and RR) [Has init.]
+0x802ADFD8 : 
+0x802AE238 : 
+0x802AE534 : 
+0x802570DC : 
+0x80257060 : 
+0x802AE85C : 
+0x802AE908 : 
+0x802AEB9C : 
+0x802AEC40 : Slow and minimal up-down y-movement (Second Bowser blue lava platforms) (0x1300F9C) [No init.]
+0x802AECDC : Minimal up-down y-movement (Second Bowser mesh platforms) (0x1300FC8) [No init.]
+0x802AECA8 : 
+0x802C63E8 : 
+0x802BD058 : Tilts in all directions if Mario is stepping on it [Has init.]
+0x802AEBC8 : Up-down y-scale (squishable platform) (0x13001064) [Has init.]
+0x802AEDC0 : 
+0x802AEEA4 : 
+0x802AF3FC : Y-rotation + flame thrower (0x130010D8) [No init.]
+0x802AF1E8 : 
+0x802AEF1C : 
+0x802AF5F8 : 
+0x802AF448 : 
+0x802AF7C4 : 
+0x802AFCE4 : 
+0x802AFD1C : 
+0x802B04B4 : 
+0x802B00E4 : Back and forth z-movement (sliding fortress platforms) (0x13001318) [No init.]
+0x802AFF30 : Moves upward when stepped on, then back to initial position (0x13001340) (fortress elevators) [No init.]
+0x802AFEE8 : Has something to do with object shadows ?? (0x13001368) (static fortress platforms) [No init.]
+0x802B0614 : 
+0x802B0614 : 
+0x802B0BEC : 
+0x802B0DF0 : 
+0x802B1278 : Purple switch (sets scaling and main switch functionality) [No init.]
+0x802B1AE0 : 
+0x802B1B2C : Breakable if ground-pounded or punched (Model ID is hardcoded-may need hacking) (0x130014E0) [Has Init.]
+0x802B15E8 : Can be pushed by Mario (0x13001518) [No init.]
+0x802B2278 : 
+0x802B1C54 : 
+0x802B2340 : 
+0x802B23E0 : 
+0x802B25AC : Unused - beta trampoline (0x13001608) [No init.]
+0x802B2494 : 
+0x802B288C : 
+0x802B29B8 : 
+0x802B3600 : 
+0x802B329C : 
+0x802B3108 : 
+0x802B2D10 : 
+0x802B3BE0 : 
+0x802B3D74 : 
+0x802B75A4 : 
+0x802B4080 : 
+0x802B3DF4 : 
+0x802A2BC4 : Used by Mario particles and Bowser second battle platform?? (0x13001920/0x13000DB4) [No init.]
+0x802B8384 : Falls down on y-axis when Bowser jumps (0x13001958) [No init.]
+0x802B8E7C : 
+0x802B8C38 : 
+0x802B921C : 
+0x802B90EC : 
+0x802B89EC : 
+0x802B8734 : 
+0x802B8734 : 
+0x802B935C : 
+0x802B9790 : 
+0x802B9BD8 : 
+0x802BA2F8 : 
+0x802BA458 : 
+0x802BA1E0 : Drain the moat when two are pounded (0x13001C04) [Has init.]
+0x802B9E94 : Dire, Dire Docks gooey warp thing (0x13001C34) [No init.]
+0x802BA5BC : 
+0x802BA608 : 
+0x802BBC0C : 
+0x802BC22C : Slowly sinks on y-axis if Mario is stepping on it (0x13001D40) [No init.]
+0x802BC0F0 : Moving platform with bobbing movement (mesh lava rafts) (0x13001D78) [No init.]
+             Behavior param. 2 = 0: moves back and forth.
+             Behavior param. 2 = 1: moves in a direction (or on trajectory??) if Mario steps on it.
+             Directions are set by object rotation.
+0x802BC618 : 
+0x802BC294 : 
+0x802BC660 : Bobbing up and down on y-axis (wooden lava platforms) (0x13001E04) [No init.]
+0x802BC728 : 
+0x802BCA74 : Y-Rotation - stops and produces fire if Mario is stepping (volcano platform) (0x13001E6C) [No init.]
+0x802BCDA8 : Slow and minimal z-rotation (long lava platforms) (0x13001E94) [No init.]
+0x802BCE58 : Slow and minimal up-down y-movement (big square lava platform) (0x13001EC4) [No init.]
+0x802BD680 : Koopa shell (0x13001F3C) [No init.]
+0x802BD488 : 
+0x802BDD68 : 
+0x802BE5A0 : 
+0x802BEC34 : Bowser puzzle piece movement (0x13002038) [No init.]
+0x802BE79C : 
+0x802BF3C0 : 
+0x802BFA88 : 
+0x802BFF3C : 
+0x802C0768 : 
+0x802C08A8 : "Express elevator" movement (0x13002194) [No init.]
+0x802C0BE0 : 
+0x802C1204 : 
+0x802C19C0 : 
+0x802C12C0 : 
+0x802C1A40 : Disables if first star of DDD is complete (unsure of how exactly this works) (0x130022D8) [No init.]
+0x802C1A90 : 
+0x802C1A80 : 
+0x802C1E10 : 
+0x802C1CD4 : 
+0x802C1C44 : 
+0x802C2190 : 
+0x802C242C : 
+0x802C22B8 : 
+0x802C263C : 
+0x802C26F8 : 
+0x802C2A24 : 
+0x802C2930 : 
+0x802C32E8 : 
+0x802C329C : 
+0x802C5224 : 
+0x802C53EC : 
+0x802C5414 : 
+0x802C51D4 : 
+0x802C4F30 : 
+0x802C4824 : 
+0x802C5688 : 
+0x802C5890 : Tilts on z-axis when stepped on (0x130028CC) [No init.]
+0x802C5A38 : 
+0x802ADF6C : 
+0x802C5CA8 : 
+0x802C5FDC : 
+0x802C5DC0 : 
+0x802C6348 : 
+0x802C6050 : 
+0x802C63E8 : 
+0x802C64A4 : 
+0x802C65C0 : 
+0x802C6B6C : 
+0x802C79D8 : 
+0x802C7B14 : 
+0x802C7CAC : 
+0x802C7F98 : 
+0x802C834C : 
+0x802C863C : 
+0x802CB1C0 : 
+0x8029CA58 : 
+0x802CB264 : 
+0x8027684C : 
+0x80276CCC : 
+0x801768E0 : 
+0x80176DF0 : 
+0x802E5F64 : 
+0x802E6114 : 
+0x802E6474 : 
+0x802E6628 : 
+0x802E742C : 
+0x802A399C : 
+0x802E7E54 : 
+0x802E80DC : 
+0x802E82B0 : 
+0x802E89D4 : 
+0x802E8ECC : 
+0x802E96C8 : 
+0x802EA588 : 
+0x802EA934 : 
+0x802EAA50 : 
+0x802EAAD0 : 
+0x802A399C : 
+0x802EAEF8 : 
+0x802EBCE0 : 
+0x802EC908 : 
+0x802ECD0C : 
+0x802ECEA0 : 
+0x802ED39C : 
+0x802ED45C : 
+0x802ED498 : 
+0x802ED62C : 
+0x802ED7FC : 
+0x802EDB2C : 
+0x802EDF28 : 
+0x802EE7E0 : 
+0x802EF274 : 
+0x802EF524 : 
+0x802EEDF0 : 
+0x802EEF9C : 
+0x802EEF9C : 
+0x802EF0E8 : 
+0x802EF66C : 
+0x802EF858 : 
+0x802EFD8C : Up-down movement on y-axis (0x13003B30) [Has Init.]
+0x802EFEF4 : 
+0x802F0104 : 
+0x802F05B4 : 
+0x802F0714 : 
+0x802F0788 : 
+0x802F07F4 : 
+0x802F0820 : 
+0x802F0898 : 
+0x802F09A4 : 
+0x802F105C : 
+0x802F1370 : 
+0x802F151C : 
+0x802F17F0 : 
+0x802F1F3C : 
+0x802F20AC : 
+0x802F1F3C : 
+0x802F25B0 : 
+0x802F2768 : 
+0x802F2D8C : 
+0x802F2F2C : 
+0x802F328C : 
+0x802F30F0 : 
+0x802F31BC : 
+0x802F36A4 : 
+0x802F3A30 : 
+0x802F36A4 : 
+0x802F40CC : 
+0x802F4248 : 
+0x802F48F4 : 
+0x802F4B00 : 
+0x802F4B78 : 
+0x802F55A4 : 
+0x802F4D78 : 
+0x802F62E4 : 
+0x802F6448 : 
+0x802F6984 : 
+0x802F6984 : 
+0x802F6984 : 
+0x802F6C0C : 
+0x802F6D58 : 
+0x802F74DC : 
+0x802F7760 : 
+0x802F7924 : 
+0x802F79B0 : 
+0x802F8044 : 
+0x802F8208 : 
+0x802F83A4 : Treasure chest group (DDD) [Has init.]
+0x802F7D04 : 
+0x802F7A58 : 
+0x802F8DAC : 
+0x802FD7F8 : 
+0x802FD950 : 
+0x802C63E8 : 
+0x802FE3B0 : 
+0x802FDA28 : 
+0x802FE8B4 : 
+0x802FF040 : 
+0x802FF96C : 
+0x802FF214 : 
+0x80300E40 : 
+0x802FFB38 : 
+0x80300ECC : 
+0x80301180 : 
+0x80302154 : 
+0x80301210 : 
+0x80303028 : 
+0x80303F64 : 
+0x8030369C : 
+0x80303744 : 
+0x80302910 : 
+0x80304BA8 : 
+0x803043F8 : 
+0x80304FD4 : 
+0x80305A58 : 
+0x80305BB0 : 
+0x80305C90 : 
+0x80305F24 : 
+0x80306084 : 
+0x803067E8 : 
+0x803068C0 : 
+0x80306A38 : 
+0x80306D38 : 
+0x80307010 : 
+0x802A1308 : 
+0x80307670 : 
+0x803077E0 : 
+0x803079C8 : 
+0x80307B58 : 
+0x80307CF8 : 
+0x80307EA4 : 
+0x80308D6C : 
+0x80309154 : 
+0x80309354 : 
+0x803094D0 : 
+0x80309530 : 
+0x803098C0 : 
+0x80309B64 : 
+0x8030A11C : 
+0x80309CEC : 
+0x8030A93C : 
+0x8030AABC : 
+0x8030B2F4 : 
+0x8030BC90 : 
+0x8030BFD0 : 
+0x8030C364 : 
+0x8030C4B0 : 
+0x8030C8EC : 
+0x8030C98C : 
+0x8030D2F0 : 
+0x8030D640 : 
+0x8030D598 : 
+0x8030D8D4 : 
+0x8030DFC4 : 
+0x802A2320 : 
+0x8030E16C : 
+0x8030EA9C : 
+0x8030FFF8 : 
+0x8031129C : 
+0x80311874 : 
+0x80312070 : 
+0x80312168 : 
+0x80312200 : 
+0x80312248 : 
+0x8031274C : 
+0x80312A54 : 
+0x80313110 : 
+0x803131E8 : 
+0x80313294 : 
+0x80313354 : Donut platform group (0x130054EC) [No init.]
+0x80313530 : Falls down and explodes when stepped on (donut platforms) (0x13005504) [No init.]
+0x80313754 : 
+0x802C63E8 : 
+0x80313FC0 : 
+0x803145D4 : 
+0x8029B49C : 
+0x8029B08C : 
+0x8029BDE4 : 
+0x8029BF64 : 
+0x8029C254 : 
+
+
+Initialization
+(Initialization or additional variables for loop functions)
+--------------
+0x802ACC3C : Related loop functions:
+             0x802A56BC
+             0x802ACE80
+             0x802ACAC8
+0x802A4120 : Re-check for exact usage
+             Related loop functions:
+             0x802A6B7C
+             0x802A5BD4
+             0x802A5AA0
+             0x802AC294
+             0x802ADF6C
+             0x802AEF1C
+             0x802B1B2C
+             0x802BA608
+             0x802C5414
+             0x802C4F30
+             0x802C65C0
+             0x8027684C
+             0x802F25B0
+             0x802F2F2C
+             0x802FE8B4
+             0x802FF040
+             0x80303F64
+             0x80305A58
+             0x80305BB0
+             0x8030B2F4
+             0x8030BC90
+             0x8030BFD0
+             0x8030C364
+             0x8030C4B0
+             0x8030C8EC
+             0x8030C98C
+             0x8030DC70
+             0x8030DFC4
+             0x80312248
+             0x8031274C
+0x802A58DC : 
+0x802A6C20 : 
+0x802A816C : 
+0x802A8630 : 
+0x802A870C : 
+0x802A8630 : 
+0x802A88A4 : 
+0x802A8370 : 
+0x802A8B18 : 
+0x802A8BC0 : 
+0x802A8D48 : 
+0x802A8B18 : 
+0x802A8BC0 : 
+0x802A8B18 : 
+0x802A8C88 : 
+0x802A8D98 : 
+0x802AAF48 : 
+0x802AB7A4 : 
+0x802ABEE4 : 
+0x802AB650 : 
+0x802AB7A4 : 
+0x802AC2C0 : 
+0x802AC2EC : 
+0x802AC5B4 : 
+0x802AC678 : 
+0x802AC78C : 
+0x802AC864 : 
+0x802AC4A0 : 
+0x802ACC3C : 
+0x802ADDF8 : Related loop functions:
+             0x802ADF6C
+0x802ADF98 : 
+0x802A2BC4 : 
+0x802A2644 : 
+0x802AE304 : 
+0x802AE360 : 
+0x802AE48C : 
+0x802BCF40 : Related loop functions:
+             0x802BD058
+             0x802AEBC8
+             0x802BD058
+             0x802BD058
+0x802AFBF8 : 
+0x802AFAE4 : 
+0x802AFA0C : 
+0x802AF9CC : 
+0x802B0974 : 
+0x802B0D48 : 
+0x802B3810 : 
+0x802B37B8 : 
+0x802B7878 : 
+0x802B8D68 : 
+0x802B8B1C : 
+0x802B9034 : 
+0x802B8960 : 
+0x802B84AC : 
+0x802B85B0 : 
+0x802B98FC : 
+0x802B9BB4 : 
+0x802BA25C : 
+0x802BA19C : Related loop functions:
+             0x802BA1E0
+0x802BBB98 : 
+0x802BC898 : 
+0x802C19FC : 
+0x802C2274 : 
+0x802C2274 : 
+0x802A2644 : 
+0x802C515C : 
+0x802C3440 : 
+0x802C3684 : 
+0x802C3440 : 
+0x802ADDF8 : 
+0x802C5F48 : 
+0x802C60AC : 
+0x802C7A70 : 
+0x802C7D40 : 
+0x802C7D90 : 
+0x802C7DFC : 
+0x802C7E5C : 
+0x802C7E5C : 
+0x80276910 : 
+0x80276BB8 : 
+0x80170280 : 
+0x801702B8 : 
+0x80170AEC : 
+0x80170B1C : 
+0x80172D70 : 
+0x80173430 : 
+0x80176B20 : 
+0x802E5EE8 : 
+0x802E6098 : 
+0x802E62A4 : 
+0x802E6790 : 
+0x802E67DC : 
+0x802E6A2C : 
+0x802E75A0 : 
+0x802E76AC : 
+0x802E7C4C : 
+0x802E76AC : 
+0x802E7C4C : 
+0x802E7C90 : 
+0x802E7F70 : 
+0x802E8388 : 
+0x802E8AE4 : 
+0x802E8F68 : 
+0x802E9764 : 
+0x802EA6A8 : 
+0x802EA7E0 : 
+0x802EA888 : 
+0x802EAA10 : 
+0x802EAA8C : 
+0x802EABF0 : 
+0x802EAC3C : 
+0x802EAD3C : 
+0x802EB05C : 
+0x802EB9D0 : 
+0x802EB104 : 
+0x802EB9D0 : 
+0x802EB104 : 
+0x802EBC00 : 
+0x802EB05C : 
+0x802EB9D0 : 
+0x802EB104 : 
+0x802EB9D0 : 
+0x802EC1B0 : 
+0x802EC75C : 
+0x802EC9B8 : 
+0x802ECBA4 : 
+0x802ECC14 : 
+0x802ECFAC : 
+0x802ED40C : 
+0x802ED78C : 
+0x802EDACC : 
+0x802EDDFC : 
+0x802EE124 : 
+0x802EE8F4 : 
+0x802EF21C : 
+0x802EF34C : 
+0x802EE9CC : 
+0x802EEEB4 : 
+0x802EEEB4 : 
+0x802EF63C : 
+0x802EF820 : 
+0x802EFCD0 : Related loop functions:
+             0x802EFD8C
+0x802EFE64 : 
+0x802F0168 : 
+0x802F06A8 : 
+0x802F084C : 
+0x802F0950 : 
+0x802F09F0 : 
+0x802F0A40 : 
+0x802F120C : 
+0x802F15A8 : 
+0x802F1714 : 
+0x802F1D64 : 
+0x802F1FD0 : 
+0x802F2140 : 
+0x802F23A8 : 
+0x802F2498 : 
+0x802F24F4 : 
+0x802F2614 : 
+0x802F2C84 : 
+0x802F2E6C : 
+0x802F3014 : 
+0x802F336C : 
+0x802F3B98 : 
+0x802F3CC8 : 
+0x802F44C0 : 
+0x802F3D30 : 
+0x802F45B8 : 
+0x802F3CC8 : 
+0x802F45F0 : 
+0x802F3CC8 : 
+0x802F4710 : 
+0x802F3CC8 : 
+0x802F496C : 
+0x802F4EB4 : 
+0x802F5CD4 : 
+0x802F6228 : 
+0x802F6D20 : 
+0x802F6E40 : 
+0x802F7264 : 
+0x802F7348 : 
+0x802F7978 : 
+0x802F7FA0 : 
+0x802F8158 : 
+0x802F82F8 : Related loop functions:
+             0x802F83A4 
+0x802F7C9C : 
+0x802F8490 : 
+0x802F8E54 : 
+0x802F965C : 
+0x802FBC4C : 
+0x802FF408 : 
+0x80301148 : 
+0x80303984 : 
+0x803044C0 : 
+0x80305100 : 
+0x80305C14 : 
+0x80305E2C : 
+0x8030699C : 
+0x80306CC4 : 
+0x80306F48 : 
+0x803071B8 : 
+0x80307760 : 
+0x80307930 : 
+0x80307AE4 : 
+0x80307C88 : 
+0x8030803C : 
+0x803091E0 : 
+0x80309454 : 
+0x803094F8 : 
+0x803097A4 : 
+0x8030A1C0 : 
+0x8030B658 : 
+0x8030CDDC : 
+0x8030DC70 : 
+0x8030E14C : 
+0x80310498 : 
+0x803118E4 : 
+0x8031326C : 
+0x803136CC : 
+0x80313754 : 
