@@ -1,0 +1,40 @@
+Super Mario 64 Non-Solid Collision Types (Used by the 0x2F Behavior Script Commands)
+http://dudaw.webs.com/
+
+NOTE: Any number prefixed with "0x" is in HEXADECIMAL format.
+
+Last updated 12/17/2010.
+_______________________________________________________________________________________________
+
+0x00000001: Mario can hang from it
+0x00000002: Mario can pick it up
+0x00000004: Door
+0x00000008: Damages Mario (normal)
+0x00000010: Coin
+0x00000020: Nothing?
+0x00000040: Pole
+0x00000080: Damages Mario (can be punched and bounced on)
+0x00000100: Damages Mario (can be punched)
+0x00000200: Nothing (can be punched)
+0x00000400: Blows Mario away
+0x00000800: Warp door
+0x00001000: Star
+0x00002000: Warp hole
+0x00004000: Cannon
+0x00008000: Damages Mario (can be punched and bounced on)
+0x00010000: Replenishes health
+0x00020000: Bully
+0x00040000: Flame
+0x00080000: Koopa shell
+0x00100000: Damages Mario (can be punched and bounced on)
+0x00200000: Damages Mario
+0x00400000: Damages Mario (can be punched and bounced on)
+0x00800000: Message
+0x01000000: Makes Mario spin
+0x02000000: Makes Mario fall?
+0x04000000: Damages Mario
+0x08000000: Warp (Mario shrinks in)
+0x10000000: Damages Mario
+0x20000000: Electrocutes Mario
+0x40000000: Normal
+0x80000000: Nothing?
