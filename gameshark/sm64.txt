@@ -1,0 +1,448 @@
+Gameshark Codes > Super Mario 64
+http://dudaw.webs.com/gameshark/sm64.txt
+
+All codes on this page were created by Dudaw (aka Dudaw12).
+
+Last updated 11/28/2011.
+
+-------------------------------------------
+Miscellaneous
+-------------------------------------------
+Debug Control (Move Mario anywhere)
+81269BD8 0C09
+81269BDA 5FAB
+Usage:
+Moving with the control stick will initialize the action.
+B = Move faster/pass through faces above a death floor.
+A = Release Mario.
+L = Hold Mario in the current position.
+D-pad up/down = Move Mario on the y-axis.
+
+Debug Control 2
+D133AFA0 0200
+81269BDA 5FAB
+D133AFA0 0100
+81269BDA 98D5
+Note:
+The code is the same as the above, however this one has a button activator to enable/disable it.
+Use the left D-pad button to enable the code, and right D-pad button disable it.
+
+Debug Control Modification:
+81258068 0000
+8125806A 0000
+Note:
+Use this code in conjunction with the "Debug Control" codes.
+This will allow you to pass through all faces, regardless of whether there is a death floor or not.
+Be warned that Mario will die if you go too far out of bounds.
+
+
+-------------------------------------------
+Button Activators
+-------------------------------------------
+Control Yoshi with the D-Pad (Press L to destroy Yoshi)
+D133AFA0 0800
+80344577 0000
+D133AFA0 0100
+80344577 0001
+D133AFA0 0400
+80344577 0003
+D133AFA0 0200
+80344577 0005
+D033AFA1 0020
+80344577 0004
+
+Control Big Boo with the D-pad
+D133AFA0 0800
+80348597 0000
+D133AFA0 0100
+80348597 0002
+D133AFA0 0400
+80348597 0005
+D133AFA0 0200
+80348597 0008
+Up on the D-pad: Restarts Boo's position
+Right on the D-pad: Pushes Boo in the opposite direction
+Down on the D-pad: Continue Boo's movement (If he's moving downward, press this and he will keep going down.
+If he's going upward, the opposite will happen if you press the button)
+Left on the D-pad: Kills Boo - Does not give star.
+
+D-Pad Clock Control
+D133AFA0 0800
+80361258 0003
+D133AFA0 0100
+80361258 0000
+D133AFA0 0400
+80361258 0002
+D133AFA0 0200
+80361258 0001
+D-pad up (12): The clock stops
+D-pad right (3): The clock is at it's slowest
+D-pad down (6): The clock is medium speed
+D-pad left (9): The clock is at it's fastest.
+
+Control King Whomp with the D-pad
+D133AFA0 0800
+80345157 0000
+D133AFA0 0100
+80345157 0003
+D133AFA0 0400
+80345157 0008
+D133AFA0 0200
+80345157 0009
+Up on the D-pad: Starts fight (you must be on the platform with the boss)
+Right on the D-pad: Makes King Whomp do a body slam
+Down on the D-pad: Kills King Whomp!
+Left on the D-pad: End fight - this makes whomp stop wherever he's at and ends attacks
+
+Control Koopa the Quick with the D-Pad (BoB Only)
+D133AFA0 0800
+8034E23B 0002
+D133AFA0 0100
+8034E237 0002
+D133AFA0 0400
+8034E237 0004
+D133AFA0 0200
+8034E237 0006
+Up on the D-pad: Makes Koopa jump (doesn't lift)
+Right on the D-pad: Start race message
+Down on the D-pad: End race message
+Left on the D-pad: Default after race end (no message).
+
+Control Final Bowser with the D-Pad
+D133AFA0 0800
+8033D5D7 0005
+D133AFA0 0100
+8033D5D7 0010
+D133AFA0 0400
+8033D5D7 000B
+D133AFA0 0200
+8033D5D7 0004
+Up on the D-pad: Different action based on Mario's distance from Bowser
+Right on the D-pad: Teleport
+Down on the D-pad: Turn around
+Left on the D-pad: Explode and die (end battle)
+
+Press L To Burn (As in jumping from lava)
+D033AFA1 0020
+8133B17C 0102
+D033AFA1 0020
+8133B17E 08B7
+
+Press L To Restore Health
+D033AFA1 0020
+8033B223 0020
+
+
+-------------------------------------------
+Mess with Mario
+-------------------------------------------
+Launch Mario On Triple Jump
+8026B88B 0018
+
+Ground-Pound Instead of Triple Jumping
+8026B82B 0018
+
+Mario is Somewhat Glitchy
+80060031 0002
+NOTE: If you get stuck in a door, tap A button repeatedly.
+
+Mario's Head Doesn't Move when Standing Still (Animation is set to reading a signpost)
+81064662 4CB0
+81064666 1642
+8106466A 4CB0
+8106466E 1642
+81064672 4CB0
+81064676 1642
+
+Mario Can Pass Through Ceilings
+813813FC 2400
+
+Mario is Always in Gas
+81253B3C 2400
+
+Fast Running Speed
+81265370 2400
+81265374 2400
+
+Walk Through Fire
+8124EAF8 2400
+8124EAFC 2400
+
+Moonwalkin' Mario
+8026537B 0000
+
+Moonwalkin' Mario 2
+81265378 2400
+
+Stronger Mario (Move faster when holding King Bob-omb and Chuck-ya)
+81269C00 0C09
+81269C02 99CD
+
+Super Slippery Mario 64
+8126490A 40C0
+8126510E 3C00
+
+
+-------------------------------------------
+Color Codes & Play as...
+-------------------------------------------
+Play as Jumpman (Retro Mario)
+8107EC50 7F60
+8107EC52 3C00
+8107EC54 7F60
+8107EC56 3C00
+8107EC58 FFC0
+8107EC5A 7800
+8107EC5C FFC0
+8107EC5E 7800
+8107EC68 0000
+8107EC6A 8000
+8107EC6C 0000
+8107EC6E 8000
+8107EC70 0000
+8107EC72 FF00
+8107EC74 0000
+8107EC76 FF00
+8107EC98 0000
+8107EC9A 8000
+8107EC9C 0000
+8107EC9E 8000
+8107ECA0 0000
+8107ECA2 FF00
+8107ECA4 0006
+8107ECA6 FF00
+8008B8CF 0020
+8008B8D7 0018
+8008BDFF 0008
+8008BE07 0000
+8008CA0F 0008
+8008CA17 0000
+8008D3E7 0020
+8008D3EF 0018
+8008DBDF 0020
+8008DBE7 0018
+8009326F 0020
+80093277 0018
+80093467 0008
+8009346F 0000
+80093B67 0008
+80093B6F 0000
+800942E7 0020
+800942EF 0018
+80094927 0020
+8009492F 0018
+800956EF 0020
+800956F7 0018
+80095897 0008
+8009589F 0000
+80095BD7 0008
+80095BDF 0000
+80095F97 0020
+80095F9F 0018
+8009643F 0020
+80096447 0018
+
+Play as Beta Mario v2 (not very accurate)
+8126B828 8FAD
+8126B832 1080
+8126B836 08A4
+8033B3BC 0000
+
+Change the Color of Red Flames:
+White
+800CF2DC 00FF
+800CF2DD 00FF
+800CF2DE 00FF
+
+Black
+800CF2DC 0000
+800CF2DD 0000
+800CF2DE 0000
+
+Green
+800CF2DC 0000
+800CF2DD 00FF
+800CF2DE 0000
+
+Yellow
+800CF2DC 00FF
+800CF2DD 00FF
+800CF2DE 0000
+
+Blue
+800CF2DC 0000
+800CF2DD 0000
+800CF2DE 00FF
+
+Purple
+800CF2DC 00FF
+800CF2DD 0000
+800CF2DE 00FF
+
+Orange
+800CF2DC 00FF
+800CF2DD 0080
+800CF2DE 0000
+
+Gray
+800CF2DC 0080
+800CF2DD 0080
+800CF2DE 0080
+
+
+-------------------------------------------
+Backgrounds, Graphics & Environment
+-------------------------------------------
+NES Backgrounds
+8007C53F 0000
+8007C53D 0000
+
+Black & White Backgrounds
+8007C531 0070
+
+Night Mode
+8007C531 0040
+8032C65A 0009
+NOTE: Only works on an ACTUAL N64 CONSOLE!
+
+Neon Mode
+8032B7A7 0003
+NOTE: Only works on an ACTUAL N64 CONSOLE!
+
+Flashy Disco Mode
+8032C62D 008F
+802CFABF 0077
+NOTE: Only works on an ACTUAL N64 CONSOLE!
+
+
+-------------------------------------------
+Coins and Jackpots
+-------------------------------------------
+Every Coin Gives A Star
+8133B218 0063
+
+Piranha Plants Give a Bunch of Coins
+802BDE7F 0074
+812BDE72 09A4
+
+Mr. I Has Coins in His Eye
+802A5AFB 0074
+812A5AEE 0984
+
+Mario's Digestive Problems (Coins come out of Mario)
+800ED643 0074
+810ED646 09A4
+
+Gambler Coins (Coins come from coins)
+812AB602 09A4
+802AB60F 0075
+
+A Better Gift from Yoshi
+8032FF03 0000
+8032FF04 0074
+8132FF0A 09A4
+
+1-Up Mushrooms Never Disappear
+812F3CA4 2400
+812F3CA8 2400
+812F3CAA 2400
+812F3CAE 2400
+
+
+-------------------------------------------
+Mass Enemies & Evil Objects
+-------------------------------------------
+Bump Into Something To Make Bob-ombs
+812AC68E 3174
+812AC69A 00BC
+NOTE: A modification of one of Yoshielectron's codes.
+
+Goombas' Fiery Rage
+802A1BA7 0090
+812A1BAE 1AA4
+
+Goombas Give Zero
+802A1BA7 00DB
+812A1BAE 4348
+
+Santa Hates Mario (Bob-ombs come from snow trees)
+812B0A02 3174
+812B0A0E 00BC
+NOTE: A modification of one of Yoshielectron's codes.
+
+Attack Of The Chain-Chomps! (Three Goomba sets are replaced with Chain-Chomps)
+812FF34E 478C
+812FF352 0066
+
+Walking Shy Guys
+802FF353 00DC
+NOTE: Only three Goomba sets are affected by this code.
+
+Shy Guys Come out of Goombas
+802A1BA7 00DC
+812A1BAE 472C
+
+Koopas Give Water Bombs
+802FC4DF 0054
+
+Replace Fish Inside Castle with Stars
+812B9806 007A
+
+Baby Cheep-Cheeps In Secret Aquarium Stage
+812BFD56 0064
+
+Attack of the Kleptos in SSL (Replaces Pokies with Kleptos)
+80331C35 0057
+81331C3A 5310
+80331C3D 0057
+81331C42 5310
+
+Attack of Thwimp & Whimp
+800EBD2B 003C
+800EBD63 003C
+810EDD68 3200
+810EDD6A 003C
+801F52E5 005A
+A032D58C 0001
+8133188A 0BC8
+8033188D 0058
+NOTE: Use level select to navigate to course 24 "mountain"
+
+Yoshi Kills Mario!
+810EF6CC 2000
+810EF6D0 103E
+800EF6D3 0008
+
+Set Chain-chomp Free
+812FFD06 3510
+
+Bully Chain-Chomp Around
+8033FE19 0002
+
+Koopas are Now Shell Factories (Get infinite shells)
+81332850 0404
+81332852 0404
+81332854 0404
+81332856 0404
+
+
+-------------------------------------------
+Music & Sound Effects
+-------------------------------------------
+Global Music Settings:
+(Enter these after the title and file select screens!)
+
+Music plays while paused
+81222618 C000
+
+No music
+81222618 E000
+
+Extra slow music
+81222622 0A00
+
+Extra fast music
+81222622 2000
+
+Current music volume
+80222630 xxxx
