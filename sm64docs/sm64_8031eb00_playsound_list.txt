@@ -1,0 +1,472 @@
+List of Arguments for the PlaySound Function (0x8031EB00)
+http://dudaw.webs.com/
+
+NOTE: Any number prefixed with "0x" is in HEXADECIMAL format.
+
+Last updated 11/18/2011.
+_______________________________________________________________________________________________
+
+Terrain Sounds:
+0x0000: Normal
+0x0001: Grass
+0x0002: Water
+0x0003: Normal
+0x0004: Squeaky floor
+0x0005: Snow
+0x0006: Ice
+0x0007: Sand
+0x0008: Normal
+0x0009: Grass
+0x000A: Water
+0x000B: Normal
+0x000C: Squeaky floor
+0x000D: Snow
+0x000E: Ice
+0x000F: Sand
+0x0010: Normal
+0x0011: Grass
+0x0012: Water
+0x0013: Normal
+0x0014: Squeaky floor
+0x0015: Snow
+0x0016: Ice
+0x0017: Sand
+0x0025: Snow
+
+Action Sound Effects:
+0x0436: Swish 1
+0x0437: Swish 2
+0x043A: Climbing up a tree
+0x043B: Climbing down a tree
+0x043C: Unknown
+0x043D: Unknown
+0x043E: Unknown
+0x043F: Mario patting back?
+0x0440: Mario brushing hair
+0x045C: Unknown
+
+General Sounds:
+0x1000: Sliding sound 1
+0x1001: Sliding sound 2
+0x1002: Sliding (water)1
+0x1003: Sliding 3
+0x1004: Sliding (ghost house)
+0x1005: Sliding (grass)
+0x1006: Sliding (snow)
+0x1007: Sliding (sand)
+0x1008: Sliding 4
+0x1009: Sliding 5
+0x100A: Sliding (water) 2
+0x100B: Sliding 6
+0x1020: On fire
+0x1021
+...
+Mario Sounds:
+0x2400: "Yah"
+0x2401: "Wah"
+0x2402: "Wooh"
+0x2403: "Hoohoo"
+0x2404: "Yahoo"
+0x2405: "Uh" (bumping into wall or letting go of ledge)
+0x2406: "Hrmm" (pick something up)
+0x2407: "Wah" (throwing something)
+0x2408: "Woah!"
+0x2409: "eeuh" (Lifting self up)
+0x240A: Attacked
+0x240B: "Ooof"
+0x240C: "Here we go!"
+0x240D: Yawning
+0x240E: Snoring 1
+0x240F: Snoring 2
+0x2410: "Waaaooow!"
+0x2411: "Haha!"
+0x2412: "Hoo" (low energy)
+0x2413: "Uh" (lifting self up, landing, etc.)
+0x2414: On fire
+0x2415: Dying
+0x2416: "Hoo" (low energy)
+0x2417: Coughing
+0x2418: "Hoo" (low energy)
+0x2419: "Hoo" (low energy)
+0x241A: "Hoo" (higher pitched)
+0x241B: Coughing
+0x241C: Coughing
+0x241D: Coughing
+0x241E: "Yah" (punching)
+0x241F: "Hoo!" (kicking)
+0x2420: "Mama-mia!"
+0x2421: "Okey-dokey"
+0x2422: "Wah" (ground pound)
+0x2423: Drowning
+0x2424: "Wah" (punching)
+0x2425: "Uh"
+0x2426: Lifting something heavy
+0x2427: "Wah"
+0x2429: "Wooh"
+0x242A: "Wooh"
+0x242B: "Yahoo"
+0x242C: "Yahoo"
+0x242D: "Yahoo"
+0x242E: "Waha!"
+0x242F: "Yipee!"
+0x2430: "Doh!"
+0x2431: "Game over"
+0x2432: "Hello!"
+0x2433: "Press start to play"
+0x2434: "Boing!"
+0x2435: Snoring 3
+0x2436: "So long-a-Bowser!"
+0x2437: "I'm-a-tired"
+
+Princess Peach:
+0x2428: "Dear Mario..." (intro letter)
+0x2438: "Mario!"
+0x2439: "The power of the stars is restored to the castle"
+0x243A: "And it's all thanks to you"
+0x243B: "Thank you Mario"
+0x243C: "We have to do something special for you"
+0x243D: "Listen everybody, let's bake a delicious cake"
+0x243E: "For Mario..."
+0x243F: "Mario..."
+
+General Sounds:
+0x3000: Explosion
+0x3001: Mario goes into hole
+0x3002: Mario goes into hole
+0x3003: Flame going out
+0x3004: Open wooden door
+0x3005: Close wooden door
+0x3006: Open metal door
+0x3007: Close metal door
+0x3008: Bubbles 1
+0x3009: Moving water
+0x300A: Swishing noise
+0x300B: Quiet bubble
+0x300C: Something exploding ??
+0x300D: Quiet bubble
+0x300E: Unused? (Similar to when Skeeter is destroyed)
+0x300F: Big explosion
+0x3010: Collect coin
+0x3011: Collect coin (commonly used by all coins)
+0x3012: Collect coin underwater (commonly used by all coins)
+0x3013: Collect coin (underwater)
+0x3014: Collect coin (underwater)
+0x3015: Collect coin (underwater)
+0x3016: Short star sound
+0x3017: Big clock sound
+0x3018: Pound (loud)
+0x3019: Pound (tiny)
+0x301A: Pound (tiny)
+0x301B: Pound (tiny)
+0x301C: Pound (tiny)
+0x301D: Pound (tiny)
+0x301E: Pound (tiny)
+0x301F: Pound (tiny)
+0x3020: Open treasure chest
+0x3021: Open treasure chest
+0x3022: Clam shell (with loud water BG)
+0x3023: Clam shell
+0x3024: Box landing
+0x3025: Unknown
+0x3026: Clam shell (with loud water BG)
+0x3027: Clam shell (quiet water BG)
+0x3028: Exit painting
+0x3029: Exit painting
+0x302A: Exit painting
+0x302B: Exit painting
+0x302C: Collect star
+0x302D: Bridge / platform
+0x302E: Explosion (normal)
+0x302F: Explosion (big)
+0x3030: Coin spurt
+0x3031: Explosion (high pitched)
+0x3032: Unknown
+0x3033: Collect coin
+0x3034: Boat tilt
+0x3035: Boat tilt 2
+0x3036: Coin drop
+0x3037: Unknown
+0x3038: Switch?
+0x3039: Chain-chomp
+0x303A: Chain-chomp 2
+0x303B: Switch?
+0x303C: Moving in sand
+0x303D: Unknown
+0x303E: Press switch?
+0x303F: Cage door opening
+0x3040: Quiet pound
+0x3041: Break box
+0x3042: Press switch / lift?
+0x3043: Quiet pound
+0x3044: Pound big thing
+0x3047: Cannon up
+0x3048: Grindel roll
+0x3049: Explosion
+0x304A: Shake (coffins, etc.)
+0x304B: Pyramid top exploding
+0x304C: Explosion (big)
+0x304D: Start race "gunshot"
+0x304E: Star door open
+0x304F: Star door close
+0x3050: Bird chirp 1
+0x3051: Bird chirp 2
+0x3052: Bird chirp 3 (cricket-like)
+0x3053: Bird chirp (beta?)
+0x3054: Purple switch timing
+0x3055: Purple switch timing (faster)
+0x3056: Pound (rock)
+0x3057: Star appears
+0x3058: 1-up
+0x3059: Elevator in HMC
+0x305A: Button press
+0x305B: Elevator moving?
+0x305C: Swish in air (from Mario)
+0x305D: Haunted chair
+0x305E: Soft landing
+0x305F: Something moving (Boo's Haunt?)
+0x3060: Bowser exploding
+0x3061: Key comes from Bowser
+0x3062: Bowser final platform breaking
+0x3063: 1-up
+0x3064: Heart spinning
+0x3065: Pound wooden post
+0x3066: Water level trigger
+0x3067: Door opening (after pressing switch?)
+0x3068: Red coin
+0x3069: Birds flying away
+0x306A: Right answer
+0x306B: Metal pounding
+0x306C: "Boing" 1
+0x306D: "Boing" 2
+0x306E: Unknown
+0x306F: Enemy alert
+0x3070: Yoshi
+0x3071: Splattering (killing moneybag)
+0x3072: "Boing" (beta trampoline?)
+0x3073: Big star
+0x3074: Big star jumping
+0x3075: Boat rocking?
+0x3076: Invisible thing appears
+0x3077: Mario goes into hole
+0x3078: Red coin
+0x3079: Birds flying away
+0x307A: Right answer
+0x307B: Metal pound
+0x307C: "Boing"
+0x307D: "Boing"
+0x307E: Yoshi walking?
+0x307F: Enemy alert
+
+Environmental Sounds:
+0x4000: Waterfall
+0x4001: Waterfall
+0x4002: Elevator 1
+0x4003: Droning sound (fire?)
+0x4004: Droning sound (fire?)
+0x4005: Wind 1
+0x4006: Moving sand/snow?
+0x4007: Unknown, rumbling sound 1
+0x4008: Elevator 2
+0x4009: Water
+0x400A: Unknown rumbling sound 2
+0x400B: Boat rocking
+0x400C: Elevator in CCM
+0x400D: Elevator 3
+0x400E: Moving sand
+0x400F: Uknown, boat rocking?
+0x4010: Wind 2
+0x4011: Moving in sand/snow??
+0x4012: Unknown (similar to Amp sound)
+0x4013: Sliding sound
+0x4014: Star sound
+0x4015: Uknown (long exploding/pounding sound)
+0x4016: Water being drained
+0x4017: Metal box being pushed
+0x4018: Sinking in quicksand?
+0x4019: Peach "sparkling" sound at end
+0x401A: Elevator 4
+0x401B: Fire??
+
+Camera sounds and others:
+0x7000: Change selection (as in moving the cursor during pause)
+0x7001: Reverse pause sound (unused ??)
+0x7002: Pause
+0x7003: Pause
+0x7004: Message appears
+0x7005: Message disappears
+0x7006: Camera zoom in
+0x7007: Camera zoom out
+0x7008: Pinch Mario's face at title screen
+0x7009: Let go of Mario's face
+0x700A: Hand appears
+0x700B: Hand disappears
+0x700C: Unknown, Similar to sound 0x7015
+0x700D: Power meter sound ??
+0x700E: Camera buzz (as in can't turn anymore)
+0x700F: Camera turning
+0x7010: Unknown
+0x7011: Click sound on file select screen
+0x7012: Read a sign
+0x7013: Go to next page in a message
+0x7014: Coin sound and "It's-a-me" at title screen
+0x7015: Gaining lives from Yoshi ??
+0x7016: Enter warp pipe
+0x7017: Exit warp pipe
+0x7018: Bowser laugh
+0x7019: Mario goes into hole
+0x701A: Click (changing view mode)
+0x701B: Really long camera-like sound (unused ??)
+0x701C: Really long reverse camera sound (unused ??)
+0x701D: Sound that plays when Mario warps back to the castle (chime with vibrato)
+0x701E: Star Sound (press start at title screen, enter painting, etc.)
+0x701F: "Thank you so much-a-for to playing my game"
+0x7020: Read a sign
+0x7021: Exit a sign
+0x7022: Unknown, Similar to sound 0x701D
+0x7023: Star sound and "Okey-dokey"
+0x7024: Star sound and "Let's-a-Go"
+
+0xGeneral Sounds:
+0x5000: Unknown, water sound
+0x5001: Mr. I shooting
+0x5002: Penguin walking
+0x5003: Bowser walking
+0x5004: Bowser roar
+0x5005: Bowser picked up by tail
+0x5006: Bowser defeated
+0x5007: Bowser spinning
+0x5008: Bowser inhaling
+0x5009: Penguin walking
+0x500A: Unknown
+0x500B: Boo laugh (shorter)
+0x500C: Thwomp?
+0x500D: Cannon 1
+0x500E: Cannon 2
+0x500F: Cannon 3
+0x5010: Piranha Plant chomping
+0x5011: Piranha Plant "uuhh"
+0x5012: Jumping/walking in water?
+0x5013: Unknown
+0x5014: Enemy dying (Mr. I only?)
+0x5015: Pounding
+0x5016: Bully/Thwomp?
+0x5017: Bully metal sound
+0x5018: Bully exploding
+0x5019: Bowser puzzle
+0x501A: Pounding sound/cannon?
+0x501B: Bully walking
+0x501C: Bully attacked
+0x501D: Unknown
+0x501E: Unknown, something spinning?
+0x501F: Baby penguin doing a trick
+0x5020: Goomba walking
+0x5021: Monkey 1
+0x5022: Monty Mole attacking
+0x5023: Unknown (tecnho-sounding)
+0x5024: Dying enemy (Piranha, Mr. I, Monty Mole, etc.)
+0x5025: Cannon shooting
+0x5026: Goomba/other enemy dying
+0x5027: Bob-Omb Buddy walking noise
+0x5028: Something landing (similar to enemy alert, backward)
+0x5029: Diving in water
+0x502A: Snow / sand?
+0x502B: Snow / sand?
+0x502C: Flame vanishing, etc.
+0x502D: Big penguin
+0x502E: Water bomb bouncing
+0x502F: Goomba alert
+0x5030: Goomba smashed
+0x5031: Unknown
+0x5032: Diving into water
+0x5033: Piranha Plant disappearing
+0x5034: Yoshi walking
+0x5035: Walking??
+0x5036: Bully walking
+0x5037: Dorrie
+0x5038: Bowser laugh
+0x5039: Monkey 2
+0x503A: Monkey 3
+0x503B: Unknown
+0x503C: Unknown
+0x503D: Koopa
+0x503E: Koopa damaged
+0x503F: Klepto 1
+0x5040: Klepto 2
+0x5041: King Bob-Omb
+0x5042: King Bob-Omb damaged
+0x5043: Scutlebug walking sound
+0x5044: Enemy alert
+0x5045: Baby penguin
+0x5046: King Bob-omb jumping, etc.
+0x5047: King Whomp destroyed
+0x5048: Boo laugh
+0x5049: Bat
+0x504A: Eel
+0x504B: Exploding sound (tumbling bridges, etc.)
+0x504C: Enemy alert
+0x504D: Snufit shooting
+0x504E: Skeeter walking sound
+0x504F: Walking in water
+0x5050: Birds
+0x5051: Birds
+0x5052: Birds
+0x5053: Unused bird chirp
+0x5054: Piranha Plant appearing
+0x5055: Flame blown
+0x5056: Mad piano chomping
+0x5057: Bully/other enemy sound
+0x5058: Bob-Omb Buddy
+0x5059: Some enemy being destroyed (short)
+0x505A: Thwomp sound (short)
+0x505B: Thwomp sound (long)
+0x505C: Wiggler
+0x505D: Tossed by Heave-Ho?
+0x505E: Wiggler destroyed?
+0x505F: Bowser intro / inside castle laugh
+0x5060: Some enemy being destroyed (high pitched)
+0x5061: Some enemy being destroyed (low pitched)
+0x5062: Bat destroyed
+0x5063: Koopa destroyed
+0x5064: Water bomb bouncing
+0x5065: Exploding sound (unused??)
+0x5066: Teleport sound
+0x5067: Unknown
+0x5068: Loud pounding sound
+0x5069: King Whomp sound
+0x506A: Mips (rabbit)
+0x506B: Mr. I spinning
+0x506C: Mips (rabbit) in water
+0x506D: Eyerok explosion
+0x506E: Chuckya defeated
+0x506F: Wiggler
+0x5070: Wiggler attacked
+0x5071: Wiggler walking
+0x5072: Snufit destroyed
+0x5073: Chomping sound (with weird background drone)
+0x5074: Enemy defeated (shrinking sound)
+0x5075: Bowser picked up by tail
+0x5076: Bowser defeated
+0x5077: Bowser swinging by tail
+0x5078: Klepto 1
+0x5079: King Bob-Omb
+0x507A: Penguin walking sound
+0x507B: Pounding sound
+0x507C: Bowser roar
+0x507D: Bowser picked up by tail
+0x507E: Bowser defeated
+0x507F: Bowser swinging by tail
+
+Message-Generated Sounds:
+0x5021: Monkey
+0x502D: Big penguin
+0x505F: Short Bowser laugh
+0x503D: Koopa
+0x5041: King Bob-Omb
+0x5048: Boo
+0x5058: Bob-Omb Buddy
+0x5038: Long Bowser laugh
+0x9069: Whomp
+0x506F: Wiggler
+0x3070: Yoshi
+0x80332E58: Sound indices
+0x80332F04: PlaySound arguments table
