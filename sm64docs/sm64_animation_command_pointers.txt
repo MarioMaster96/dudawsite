@@ -1,0 +1,82 @@
+Super Mario 64 Animation Command Pointers (0x27 Behavior Script Commands)
+http://dudaw.webs.com/
+
+NOTE: Any number prefixed with "0x" is in HEXADECIMAL format.
+
+Last updated 12/1/2011.
+_______________________________________________________________________________________________
+
+0x27 Command Offset | Segmented Pointer to Animations | Description
+--------------------------------------------------------------------
+0x00219FFC          | 0x0500FE30                      | King Bob-Omb
+0x0021A330          | 0x0800C070                      | Chuck-ya
+0x0021BAD0          | 0x05015784                      | Ukiki (monkey)
+0x0021B0BC          | 0x05002D68                      | Spindrift
+0x0021B350          | 0x0501534C                      | Heave-Ho
+0x0021B66C          | 0x060577E0                      | Bowser
+0x0021BDC4          | 0x0601C31C                      | Piranha Plant 1
+0x0021EF2C          | 0x0601C31C                      | Piranha Plant 2
+0x0021BE90          | 0x05008B74                      | Penguin 1
+0x0021BEF4          | 0x05008B74                      | Penguin 2
+0x0021CC68          | 0x05008B74                      | Penguin 3
+0x0021F188          | 0x05008B74                      | Penguin 4
+0x0021C140          | 0x0500AE54                      | Sushi (shark)
+0x0021C964          | 0x06015064                      | Scuttlebug (spider)
+0x0021C9D8          | 0x06020A04                      | Whomp
+0x0021CD00          | 0x0600FC48                      | Toad 1
+0x0021AC90          | 0x0600FC48                      | Toad 2
+0x0021CF7C          | 0x0802396C                      | Bob-Omb/Buddy 1
+0x0021CFE4          | 0x0802396C                      | Bob-Omb/Buddy 2
+0x0021D030          | 0x0802396C                      | Bob-Omb/Buddy 3
+0x0021D15C          | 0x08004034                      | Amp 1
+0x0021D190          | 0x08004034                      | Amp 2
+0x0021D1C4          | 0x030056B0                      | Butterfly 1
+0x0021F3A0          | 0x030056B0                      | Butterfly 2
+0x0021D1F4          | 0x05005768                      | Hoot (owl)
+0x0021D434          | 0x0500470C                      | Bully 1
+0x0021D468          | 0x0500470C                      | Bully 2
+0x0021D49C          | 0x0500470C                      | Bully 3
+                    | 0x0500616C                      | Blargg (unused)
+0x0021D4D0          | 0x06003994                      | Chill Bully 1
+0x0021D508          | 0x06003994                      | Chill Bully 2
+0x0021DA60          | 0x0700C95C                      | Castle flag
+0x0021E178          | 0x05008EB4                      | Manta Ray
+0x0021E304          | 0x06015724                      | MIPS (rabbit)
+0x0021E340          | 0x050241E8                      | Yoshi
+0x0021E38C          | 0x06011364                      | Koopa
+0x0021E4A0          | 0x060070D0                      | Swoop (bat)
+0x0021E4E4          | 0x08011A64                      | Shy Guy
+0x0021E538          | 0x0801DA4C                      | Goomba
+0x0021E598          | 0x06025178                      | Chain-Chomp
+0x0021E6A4          | 0x0500EC8C                      | Wiggler (front body parts)
+0x0021E720          | 0x050144D4                      | Lakitu
+0x0021E75C          | 0x060058F8                      | Lakitu (castle areas) 1
+0x0021F418          | 0x060058F8                      | Lakitu (castle areas) 2
+0x0021E80C          | 0x05007248                      | Monty Mole
+0x0021EBC8          | 0x0500D118                      | Mr. Blizzard
+0x0021ED48          | 0x05012824                      | Unagi (eel)
+0x0021EDA0          | 0x0600F638                      | Dorrie (water dragon)
+0x0021EDE0          | 0x05005784                      | Floating chair
+0x0021EE30          | 0x05009B14                      | Piano
+0x0021EE74          | 0x05002540                      | Floating book
+0x0021F0D8          | 0x050116E4                      | Eyerok
+0x0021F118          | 0x05008CFC                      | Klepto
+0x0021F15C          | 0x050009E8                      | Castle bird 1
+0x0021F464          | 0x050009E8                      | Castle bird 2
+0x0021F488          | 0x050009E8                      | Castle bird 3
+0x0021F24C          | 0x05001744                      | Clam shell
+0x0021F270          | 0x06007DE0                      | Skeeter (water bug)
+0x0021F440          | 0x0501C504                      | Princess Peach 1
+0x0021ACB4          | 0x0501C504                      | Princess Peach 2
+0x0021D558          | 0x06013F7C                      | Water ring 1
+0x0021D5A0          | 0x06013F7C                      | Water ring 2
+0x0021C014          | 0x06012354                      | Cheep-Cheep
+0x0021E7D0          | 0x05016EAC                      | Spiny
+0x0021E6E8          | 0x0500C874                      | Wiggler (back body parts)
+0x0021D7A8          | 0x06005E5C                      | Moneybag
+0x0021A918          | 0x030156C0                      | Door
+0x0021B938          | 0x0301C2B0                      | Fish
+0x0021B9B8          | 0x030172D0                      | Bowser key (opening door) 1
+0x0021B9D8          | 0x030172D0                      | Bowser key (opening door) 2
+0x0021CF3C          | 0x0600A4D4                      | Seaweed
+0x0021E418          | 0x06001028                      | Koopa flag
