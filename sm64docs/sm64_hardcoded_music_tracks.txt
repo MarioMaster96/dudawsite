@@ -1,0 +1,30 @@
+Super Mario 64 Hardcoded Music Track Calls
+http://dudaw.webs.com/
+
+NOTE: Any number prefixed with "0x" is in HEXADECIMAL format.
+
+Last updated 3/11/2011.
+_______________________________________________________________________________________________
+
+0x00269F6C: Title Theme
+0x0026A080: Game Over ??
+0x002A61EC: File Select
+0x002A62B0: Star Select
+
+0x80249FD0: Metallic Mario (initial track)
+0x80249FF0: Powerful Mario (vanish/wing cap initial track)
+0x8024FBF8: Powerful Mario (vanish cap)
+0x8024FC10: Metallic Mario
+0x8024FC28: Powerful Mario (wing cap)
+0x8025826C: Course Clear (normal stars)
+0x802BDFC0: Piranha Plant's Lullaby
+0x802DA048: Stage Boss
+0x802FCC40: Koopa the Quick race
+0x80322084: Course Clear (bonus stars asking to save)
+0x803220C0: Peach's Message (you got a star...)
+0x803220FC: Correct solution (secrets fanfare)
+0x80321964: Bowser's Message
+0x80322138: Star Catch Fanfare (hi score)
+0x80322188: Power star appears
+0x803221C4: Race Fanfare (both Koopas and penguin)
+0x80322200: Toad's Message
