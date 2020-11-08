@@ -1,0 +1,26 @@
+Super Mario 64 Misc. Collision Types
+http://dudaw.webs.com/
+
+NOTE: Any number prefixed with "0x" is in HEXADECIMAL format.
+
+Last updated 8/28/2011.
+_______________________________________________________________________________________________
+
+Current collision type being stepped on:
+0x8033C5F0
+0x8033C608
+
+0x0B / 11: Close-up camera movement (good for narrow areas)
+0x0D / 13: Something beneath water ??
+0x1A / 26: Used in merry-go-round room ??
+0x21 / 33: Sand (makes it hard for Mario to jump)
+0x22 / 34: Sand that pulls down Mario (with death)
+0x26 / 38: Sand that pulls Mario down (without death)
+0x2F / 47: Ceiling warp (Warp ID F2 defines the destination level)
+0x32 / 50: Death floor that doesn't take lives (DDD, HMC, etc.)
+0x35 / 53: Solid and slippery snow
+0x37 / 55: Areas near water in Snowman's Land
+0x6E / 110: Step on 4 to make behavior 3BB4 explode (two extra bytes define collision type)
+0x70 / 112: Camera turns
+0xBB / 187: Rear and front areas of DDD entrance ??
+0xFF / 255: Hole in Bowser hallway
