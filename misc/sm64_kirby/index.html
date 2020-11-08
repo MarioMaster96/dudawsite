@@ -76,8 +76,8 @@ bugs, although they'll probably go unnoticed during gameplay.</p>
 var url = "https://drive.google.com/uc?export=download&id=0B3VqzoWRn81BQzhKNWVOSXBkZnM";
 var link =  '<link href="' + url + '">';
 var match = link.match(/<link .*?href="(.*)">/i);
-var filename = match[1].split('/').pop();
-document.write("SuperMario64KirbyEditionV11.zip" + " (1.6 MB)");
+var filename = "SuperMario64KirbyEditionV11.zip";
+document.write(filename.link(url) + " (1.6 MB)");
 </script>
 </div>
 
@@ -88,8 +88,8 @@ document.write("SuperMario64KirbyEditionV11.zip" + " (1.6 MB)");
 var url = "https://drive.google.com/uc?export=download&id=0B3VqzoWRn81BUjYwMU1BVmFWVkk";
 var link =  '<link href="' + url + '">';
 var match = link.match(/<link .*?href="(.*)">/i);
-var filename = match[1].split('/').pop();
-document.write("kirby_release.zip" + " (351 KB)");
+var filename = "kirby_release.zip";
+document.write(filename.link(url) + " (351 KB)");
 </script>
 </div>
 
@@ -100,8 +100,8 @@ document.write("kirby_release.zip" + " (351 KB)");
 var url = "https://drive.google.com/uc?export=download&id=0B3VqzoWRn81BdnF2cFpFLWw5N2s";
 var link =  '<link href="' + url + '">';
 var match = link.match(/<link .*?href="(.*)">/i);
-var filename = match[1].split('/').pop();
-document.write("Project64.cht.txt" + " (86.5 KB)");
+var filename = "Project64.cht.txt";
+document.write(filename.link(url) + " (86.5 KB)");
 </script>
 </div>
 <br/>
