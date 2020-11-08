@@ -1,0 +1,277 @@
+Super Mario 64 Mario's Actions List
+http://dudaw.webs.com/
+
+NOTE:
+The RAM offsets on the left-hand side jump to some JAL instructions
+which then point to the actual actions' functions.
+
+NOTE: Any number prefixed with "0x" is in HEXADECIMAL format.
+
+Last updated 11/6/2011.
+_______________________________________________________________________________________________
+
+0x80269964: Smashed
+0x802701A0:
+0x802700CC: Lifted by wind
+0x802700A4:
+0x80270090: Walk off an edge ??
+0x8027007C: Kick
+0x80270068: Slide kick
+0x802760B4: Punch
+0x8026FFF0: Jumping with bouncy box
+0x8026FF50: Jump from pole/tree (normal)
+0x8026FED8: Jump while tossing object
+0x8026FEC4: Belly slide in air
+0x8026FEB0: On Koopa shell
+0x8026FDFC: Spin jump
+0x80270018: Ground pound
+0x8026FF78: Blasted from cannon
+0x802700B8: Jump from hand stand
+0x8026FDE8: Jump from pole/tree
+0x8026FE38: Some jump ??
+0x8026FE9C: Long jump
+0x8026FD84: Double jump (normal)
+0x8026FD70: Jump (normal)
+0x8026FF8C: Sliding on behind
+0x80270054: Jump into flight (requires cap to fly)
+0x8026FDAC: Jump while holding object (requires object)
+0x80270004: Special triple jump from Yoshi
+0x8026FEEC: Fall backward (short version)
+0x8026FF00: Fall forward (short version)
+0x8026FF14: Fall forward (long version)
+0x8026FF28: Fall backward (long version)
+0x8026FE4C: On fire and running (initial jump)
+0x8026FE60: Fall while on fire
+0x8026FF3C: Fall forward (standing)
+0x8026FFB4: On fire (jumping from lava)
+0x8026FFC8: Blown backward, lose cap
+0x8027002C: Tossed forward
+0x80270040: Tossed backward ??
+0x8026FE74: Triple jump
+0x8026FE88: Back flip
+0x8026FDD4: Side flip (moving forward)
+0x8026FE10: Jumping out of warp
+0x8026FD98: Walk off an edge (normal)
+0x8026FDC0: Jump while holding object
+0x8026FFA0: Slide while holding object
+0x8026FE24: Jump while holding object
+0x8026FF64: Somersault after belly-flop
+0x8026FFDC: Somersault after belly-flop (backward)
+0x80272FE8: Jumping in/out of water ??
+0x80273004: Another type of jump ??
+0x80273020: Another type of jump ??
+0x8027303C: Another type of jump ??
+0x80273058: Jumping out of...
+0x80273070: Jumping out of...
+0x802730B8: Unknown
+0x802730CC: Unknown
+0x802730E0: Unknown
+0x802730F4: Unknown
+0x80273108: Unknown
+0x802730F4: Unknown
+0x80273108: Unknown
+0x8027311C: Unknown
+0x80269CF0: Slide on belly and then get up (holding object)
+0x80269CDC: Slide on behind and then get up (holding object)
+0x80269CC8: Sliding on belly
+0x80269CB4: Sliding on behind
+0x80269CA0: Jumping while holding object
+0x80269C78: On fire and running (running)
+0x80269C8C: Walking
+0x80269C64: Crouching
+0x80269C50: On Koopa shell
+0x80269C3C: Sliding on ground (as in turning the other direction)
+0x80269C28: Side flip (jumping)
+0x80269C14: Side flip (jumping) 2
+0x80269C00: Holding large object
+0x80269BEC: Holding small object
+0x80269BD8: Running
+0x80269EBC: Land from long jump
+0x80269EA8: Jumping while holding object (low)
+0x80269E94: Jump (low)
+0x80269E58: Jump while holding object
+0x80269E44: Jump while holding object
+0x80269DCC: Bump into a wall
+0x80269DB8: Attacked from behind 1
+0x80269DA4: Attacked from behind 2
+0x80269D90: Attacked from behind, falling onto ground"
+0x80269D7C: Attacked from front, falling onto ground"
+0x80269D68: Attacked from behind, fall onto ground, get up"
+0x80269D54: Lethal damage from front
+0x80269D40: Slide kick
+0x80269E80: Back flip
+0x80269E6C: Landing from back flip
+0x80269E30: Double jump
+0x80269E1C: Triple jump
+0x80269E08: Double jump
+0x80269DF4: Double jump
+0x80263DA4: Jump
+0x80263D7C: Jump
+0x80263D54: Jump
+0x80263D2C: Jump while holding object
+0x80263D18: Jump while holding object
+0x80263D90: Back flip (pushed back)
+0x80263C8C: Get up from ground after sleeping ??
+0x80263DE0: Jump
+0x80263DCC: Jump
+0x80263D04: Jump
+0x80263CF0: Jump
+0x80263CDC: Jump
+0x80263CB4: Walking ??
+0x80263C78: Crawling/crouching??
+0x80263C64: Crawling/crouching??
+0x80263C50: Back flip
+0x80263C3C: Back flip
+0x80263C28: Back flip
+0x80263C14: Cold Mario
+0x80263C00: Jump
+0x80263BEC: Jump
+0x80263B4C: Jump
+0x80263B38: Jump
+0x80260798: Jump from handstand
+0x80260784: Unknown
+0x80260770: Unknown
+0x8026075C: "Woah..." ??
+0x80260748: "Woah..." ??
+0x8025DD00: Put cap on
+0x8025DC88: Fade from warp
+0x8025DC74: Fade to warp
+0x8025DC38: Land from warp in Bowser levels, etc.
+0x8025DC10: Slowly walking through star door
+0x8025DBFC: Opening star door (reacting to power star...)
+0x8025DBE8: Unknown
+0x8025DB5C: Level exit success
+0x8025DB34: Land from warp in main courses
+0x8025DAF8: Warping from door
+0x8025DAE4: Warping through door
+0x8025DAD0: Waving (calls entire ending sequence?)
+0x8025DABC: Unknown
+0x8025D9CC: Debug action (80257EAC = function)
+0x8025DA08: Reading message
+0x8025D9E0: Reading message (calls message)
+0x8025D968: Get star 1
+0x8025D97C: Get star underwater
+0x8025D954: Get star (unknown, star stays behind Mario)
+0x8025D92C: In painting / warp
+0x8025DC4C: Mini cage warp
+0x8025DC24: Falling from warp (Bowser levels, etc.)
+0x8025DBD4: Falling from warp (sparkling, save message type)
+0x8025DBC0: Warp from painting (failure)
+0x8025DBAC: Warp from painting (success)
+0x8025DB98: Warp from ceiling (failure)
+0x8025DB84: Warp from ceiling (success?)
+0x8025DB70: Warp from hole (failure)
+0x8025DB48: Level exit success (taking cap off and putting it back on)
+0x8025DB20: Falling from warp (main courses)
+0x8025DB0C: Jumping out of warp / pipe
+0x8025DAA8: Landing at ending (calls ending sequence)
+0x8025D990: Get star 2
+0x8025DCEC: Stuck in snow/sand
+0x8025DCD8: Stuck in snow/sand (behind stuck in ground)
+0x8025DCC4: Stuck in snow/sand (head in ground)
+0x8025DCB0: Jump
+0x8025DC9C: Getting shocked
+0x8025DA94: Dead
+0x8025DA80: Dying on ground
+0x8025DA6C: Dying with face on ground
+0x8025DA58: Dying in toxic gas
+0x8025DA44: Dying from Electrocution
+0x8025DA30: Dying in quicksand
+0x8025DA1C: Dying while standing
+
+Probably not related to Mario
+0x8025D138: Unknown
+0x8025D128: Unknown
+0x8025D118: Unknown
+0x8025D108: Unknown
+0x8025D0F8: Unknown
+0x8025D0E8: Unknown
+0x8025D0D8: Unknown
+0x8025D0C8: Unknown
+0x8025D0B8: Unknown
+0x8025D0A8: Unknown
+0x8025D098: Unknown
+0x8025D088: Unknown
+0x8025D078: Unknown
+0x802555F4: Unknown
+0x80255594: Unknown
+0x802554FC: Unknown
+0x80255548: Unknown
+0x80255620: Unknown
+0x802554B0: Unknown
+0x80252720: Unknown
+0x8025260C: Unknown
+0x802527E4: Unknown
+0x80252760: Unknown
+0x80252898: Unknown
+0x80251828...
+0x80251838...
+0x80251818...
+0x802519A8...
+0x802519D4...
+0x802519C4...
+0x802519B4...
+0x802519E4...
+0x802519F4...
+---------------------------------------------------------------------------------------
+Underwater Actions (0x8027499C)
+0x80274D70: In water
+0x80272B3C: Hit stun
+0x80274C08: Floating
+0x80274C1C: Holding object
+0x80274C30: Floating after other action
+0x80274C44: Holding object
+0x80274C58: Drowning
+0x80274C6C: Attacked from front
+0x80274C80: Attacked from behind
+0x80274C94: Death
+0x80274CA8: Shocked
+0x80274CBC: Breast stroke
+0x80274CD0: Single flutter kick
+0x80274CE4: Flutter kick
+0x80274CF8: Swimming (holding object)
+0x80274D0C: Swimming (holding object) 2
+0x80274D20: Flutter kick (holding object)
+0x80274D34: Forced flutter kick (Koopa shell)
+0x80274D48: Throw object underwater
+0x80274D5C: Grabbing something
+0x80274DAC: Jumping out of water ??
+0x80274E24: Jumping out of water ??
+0x80274DE8: Jump
+0x80274E60: Jump
+0x80274DFC: Jump (metal Mario)
+0x80274E74: Jump (metal Mario)
+---------------------------------------------------------------------------------------
+0x80274F90: Punch (right hand) 1
+0x80274FA8: Punch (right hand) 2
+0x80275050: Punch (right hand) 3
+0x802750CC: Punch (left hand) 1
+0x802750E4: Punch (left hand) 2
+0x80275170: Punch (left hand) 3
+0x802751EC: Kick 1
+0x80275308: Unknown
+0x80275280: Unknown
+0x802760C8: Picking up an object
+0x8027617C: Unknown
+0x802760DC: Getting up from ground (holding object)
+0x802760F0: Getting up from ground
+0x80276104: Drop object
+0x80276140: Grabbing Bowser by the tail
+0x80276154: Holding Bowser by the tail
+0x80276168: Letting go of Bowser
+
+0xProbably not related to Mario
+0x802768A8: Unknown
+0x802768B8: Unknown
+0x802768C8: Unknown
+0x802768D8: Unknown
+0x802768E8: Unknown
+0x8027DFA0: Unknown
+0x8027DFD0: Unknown
+0x8027DFE0: Unknown
+0x8027E090: Unknown
+0x8027E0A0: Unknown
+0x8027E0B0: Unknown
+0x8027DF90: Unknown
+0x8027DFB0: Unknown
+0x8027DFC0: Unknown
